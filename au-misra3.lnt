@@ -1,0 +1,523 @@
+/* Date Stamp */ -d"_lint_au_misra3_lnt=au-misra3.lnt modified 12-Jun-2014"
+/* To document usage use: -message( "Using " _lint_au_misra3_lnt ) */
+
+// ---------------------------------------------------------------------
+// This file is provided by Gimpel Software (www.gimpel.com) for use with
+// its products PC-lint and FlexeLint.
+//
+// Redistribution and use of this file, with or without modification, is
+// permitted provided that any such redistribution retains this notice.
+// ---------------------------------------------------------------------
+
+// au-misra3.lnt -- Author options - MISRA C 2012
+
+/*
+    This options file can be used to explicitly activate those
+    checks advocated by the Motor Industry Software Reliability
+    Association.
+
+    You can use this file directly when linting your programs as in:
+
+    lin  au-misra3  files
+
+    Gimpel Software relies on the document, "MISRA-C:2012
+    Guidelines for the use of the C language in critical systems",
+    copyright 2012 by MIRA Limited, as the primary source for this
+    file.  Gimpel Software makes no warranty as to the completeness
+    or applicability of this options file and reserves the right to
+    amend or alter the official contents of such at any time.
+
+    "MISRA" is a registered trademark of MIRA Limited, held on
+    behalf of the MISRA Consortium.
+
+ */
+    -misra(3)       // Activate MISRA Essential Type model
+
+/**** Dir 1.1 (Req) ************/
+
+
+/**** Dir 2.1 (Req) ************/
+
+    -A(C99) 		       /* strict ISO C99 */
+    /* Note: if you code to the C90 standard instead, you may
+       want to comment out the above option and uncomment the
+       following option. You will also want to do likewise for
+       other uses of the '-A(C99)' option throughout this file. */
+    // -A(C90)                    /* strict ANSI */
+    +e950                      /* flag non-standard word or construct */
+    +elib(950)
+    -append(950,[MISRA 2012 Directive 2.1, required])
+
+/**** Dir 3.1 (Req) ************/
+
+
+/**** Dir 4.1 (Req) ************/
+
+
+/**** Dir 4.2 (Adv) ************/
+
+
+/**** Dir 4.3 (Req) ************/
+
+
+/**** Dir 4.4 (Adv) ************/
+
+
+/**** Dir 4.5 (Adv) ************/
+
+
+/**** Dir 4.6 (Adv) ************/
+
+
+/**** Dir 4.7 (Req) ************/
+
+
+/**** Dir 4.8 (Adv) ************/
+
+
+/**** Dir 4.9 (Adv) ************/
+
+
+/**** Dir 4.10 (Req) ************/
+
+
+/**** Dir 4.11 (Req) ************/
+
+
+/**** Dir 4.12 (Req) ************/
+
+
+/**** Dir 4.13 (Adv) ************/
+
+
+/**** Rule 1.1 (Req) ************/
+
+
+/**** Rule 1.2 (Adv) ************/
+
+
+/**** Rule 1.3 (Req) ************/
+
+
+/**** Rule 2.1 (Req) ************/
+
+
+/**** Rule 2.2 (Req) ************/
+
+
+/**** Rule 2.3 (Adv) ************/
+
+
+/**** Rule 2.4 (Adv) ************/
+
+
+/**** Rule 2.5 (Adv) ************/
+
+
+/**** Rule 2.6 (Adv) ************/
+
+
+/**** Rule 2.7 (Adv) ************/
+
+
+/**** Rule 3.1 (Req) ************/
+
+
+/**** Rule 3.2 (Req) ************/
+
+
+/**** Rule 4.1 (Req) ************/
+
+
+/**** Rule 4.2 (Adv) ************/
+
+
+/**** Rule 5.1 (Req) ************/
+
+
+/**** Rule 5.2 (Req) ************/
+
+
+/**** Rule 5.3 (Req) ************/
+
+
+/**** Rule 5.4 (Req) ************/
+
+
+/**** Rule 5.5 (Req) ************/
+
+
+/**** Rule 5.6 (Req) ************/
+
+
+/**** Rule 5.7 (Req) ************/
+
+
+/**** Rule 5.8 (Req) ************/
+
+
+/**** Rule 5.9 (Adv) ************/
+
+
+/**** Rule 6.1 (Req) ************/
+
+
+/**** Rule 6.2 (Req) ************/
+
+
+/**** Rule 7.1 (Req) ************/
+
+
+/**** Rule 7.2 (Req) ************/
+
+
+/**** Rule 7.3 (Req) ************/
+
+
+/**** Rule 7.4 (Req) ************/
+
+
+/**** Rule 8.1 (Req) ************/
+
+
+/**** Rule 8.2 (Req) ************/
+
+
+/**** Rule 8.3 (Req) ************/
+
+
+/**** Rule 8.4 (Req) ************/
+
+
+/**** Rule 8.5 (Req) ************/
+
+
+/**** Rule 8.6 (Req) ************/
+
+
+/**** Rule 8.7 (Adv) ************/
+
+
+/**** Rule 8.8 (Req) ************/
+
+
+/**** Rule 8.9 (Adv) ************/
+
+
+/**** Rule 8.10 (Req) ************/
+
+
+/**** Rule 8.11 (Adv) ************/
+
+
+/**** Rule 8.12 (Req) ************/
+
+
+/**** Rule 8.13 (Adv) ************/
+
+
+/**** Rule 8.14 (Req) ************/
+
+
+/**** Rule 9.1 (Mand) ************/
+
+
+/**** Rule 9.2 (Req) ************/
+
+
+/**** Rule 9.3 (Req) ************/
+
+
+/**** Rule 9.4 (Req) ************/
+
+
+/**** Rule 9.5 (Req) ************/
+
+
+/**** Rule 10.1 (Req) ************/
+
+
+/**** Rule 10.2 (Req) ************/
+
+
+/**** Rule 10.3 (Req) ************/
+
+
+/**** Rule 10.4 (Req) ************/
+
+
+/**** Rule 10.5 (Adv) ************/
+
+
+/**** Rule 10.6 (Req) ************/
+
+
+/**** Rule 10.7 (Req) ************/
+
+
+/**** Rule 10.8 (Req) ************/
+
+
+/**** Rule 11.1 (Req) ************/
+
+
+/**** Rule 11.2 (Req) ************/
+
+
+/**** Rule 11.3 (Req) ************/
+
+
+/**** Rule 11.4 (Adv) ************/
+
+
+/**** Rule 11.5 (Adv) ************/
+
+
+/**** Rule 11.6 (Req) ************/
+
+
+/**** Rule 11.7 (Req) ************/
+
+
+/**** Rule 11.8 (Req) ************/
+
+
+/**** Rule 11.9 (Req) ************/
+
+
+/**** Rule 12.1 (Adv) ************/
+
+
+/**** Rule 12.2 (Req) ************/
+
+
+/**** Rule 12.3 (Adv) ************/
+
+
+/**** Rule 12.4 (Adv) ************/
+
+
+/**** Rule 13.1 (Req) ************/
+
+
+/**** Rule 13.2 (Req) ************/
+
+
+/**** Rule 13.3 (Adv) ************/
+
+
+/**** Rule 13.4 (Adv) ************/
+
+
+/**** Rule 13.5 (Req) ************/
+
+
+/**** Rule 13.6 (Mand) ************/
+
+
+/**** Rule 14.1 (Req) ************/
+
+
+/**** Rule 14.2 (Req) ************/
+
+
+/**** Rule 14.3 (Req) ************/
+
+
+/**** Rule 14.4 (Req) ************/
+
+
+/**** Rule 15.1 (Adv) ************/
+
+
+/**** Rule 15.2 (Req) ************/
+
+
+/**** Rule 15.3 (Req) ************/
+
+
+/**** Rule 15.4 (Adv) ************/
+
+
+/**** Rule 15.5 (Adv) ************/
+
+
+/**** Rule 15.6 (Req) ************/
+
+
+/**** Rule 15.7 (Req) ************/
+
+
+/**** Rule 16.1 (Req) ************/
+
+
+/**** Rule 16.2 (Req) ************/
+
+
+/**** Rule 16.3 (Req) ************/
+
+
+/**** Rule 16.4 (Req) ************/
+
+
+/**** Rule 16.5 (Req) ************/
+
+
+/**** Rule 16.6 (Req) ************/
+
+
+/**** Rule 16.7 (Req) ************/
+
+
+/**** Rule 17.1 (Req) ************/
+
+
+/**** Rule 17.2 (Req) ************/
+
+
+/**** Rule 17.3 (Mand) ************/
+
+
+/**** Rule 17.4 (Mand) ************/
+
+
+/**** Rule 17.5 (Adv) ************/
+
+
+/**** Rule 17.6 (Mand) ************/
+
+
+/**** Rule 17.7 (Req) ************/
+
+
+/**** Rule 17.8 (Adv) ************/
+
+
+/**** Rule 18.1 (Req) ************/
+
+
+/**** Rule 18.2 (Req) ************/
+
+
+/**** Rule 18.3 (Req) ************/
+
+
+/**** Rule 18.4 (Adv) ************/
+
+
+/**** Rule 18.5 (Adv) ************/
+
+
+/**** Rule 18.6 (Req) ************/
+
+
+/**** Rule 18.7 (Req) ************/
+
+
+/**** Rule 18.8 (Req) ************/
+
+
+/**** Rule 19.1 (Mand) ************/
+
+
+/**** Rule 19.2 (Adv) ************/
+
+
+/**** Rule 20.1 (Adv) ************/
+
+
+/**** Rule 20.2 (Req) ************/
+
+
+/**** Rule 20.3 (Req) ************/
+
+
+/**** Rule 20.4 (Req) ************/
+
+    +e9051                              /* macro with same name as a keyword */
+    +elib(9051)
+    -append(9051,[MISRA 2012 Rule 20.4, required])
+
+/**** Rule 20.5 (Adv) ************/
+
+
+/**** Rule 20.6 (Req) ************/
+
+
+/**** Rule 20.7 (Req) ************/
+
+
+/**** Rule 20.8 (Req) ************/
+
+
+/**** Rule 20.9 (Req) ************/
+
+
+/**** Rule 20.10 (Adv) ************/
+
+
+/**** Rule 20.11 (Req) ************/
+
+
+/**** Rule 20.12 (Req) ************/
+
+
+/**** Rule 20.13 (Req) ************/
+
+
+/**** Rule 20.14 (Req) ************/
+
+
+/**** Rule 21.1 (Req) ************/
+
+
+/**** Rule 21.2 (Req) ************/
+
+
+/**** Rule 21.3 (Req) ************/
+
+
+/**** Rule 21.4 (Req) ************/
+
+
+/**** Rule 21.5 (Req) ************/
+
+
+/**** Rule 21.6 (Req) ************/
+
+
+/**** Rule 21.7 (Req) ************/
+
+
+/**** Rule 21.8 (Req) ************/
+
+
+/**** Rule 21.9 (Req) ************/
+
+
+/**** Rule 21.10 (Req) ************/
+
+
+/**** Rule 21.11 (Req) ************/
+
+
+/**** Rule 21.12 (Adv) ************/
+
+
+/**** Rule 22.1 (Req) ************/
+
+
+/**** Rule 22.2 (Mand) ************/
+
+
+/**** Rule 22.3 (Req) ************/
+
+
+/**** Rule 22.4 (Mand) ************/
+
+
+/**** Rule 22.5 (Mand) ************/
+
+
+/**** Rule 22.6 (Mand) ************/
+
